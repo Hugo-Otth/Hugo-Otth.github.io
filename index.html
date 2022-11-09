@@ -1,24 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+	
+<head>
 	<title>Hugo Otth</title>
 	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta charset="utf-8">
 	<link href="./css/Hugo.Otth.css" rel="stylesheet" type="text/css">
 	<link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<link href="images\logo-site.png" rel="shortcut icon" type="image/x-icon"> <!--Mettre fichier de type .ico au lieu de png-->
-  <link href="images\logo-site.png" rel="apple-touch-icon">
-<head>
+  	<link href="images\logo-site.png" rel="apple-touch-icon">
+	
  
 
 </head>
 
 <body class="container">
+	<!-- Go to Top Button -->
 	<div>
-		<button onclick="topFunction()" id="btnScroll" title="Go to top"><img src="images/upArrow.png" style="width: 200px; z-index: 10; position: fixed; left: 20px; bottom: 20px; height: 60px; width: 60px;" alt=""></button>
+		<button onclick="topFunction()" id="btnScroll" title="Go to top"><img src="images/upArrow.png" class="btnScroll invert" alt=""></button>
 	</div>
-	<div id="test">
-		<a href="#section1">sec1</a>
-		<a href="#section2">sec2</a>
-		<a href="#section3">sec3</a>
+	<!-- Section Selection  -->
+	<div class="div">
+		<div class="container btnContainer">
+			<div class="col">
+				<div>
+					<a href="#top" id="btnSectionHome"><img src="images/btnHome.png" class="btnSection" alt="Go to section1"></a>
+				</div>
+				<div>
+					<a href="#section1" id="btnSection1"><img src="images/btnSection.png" class="btnSection" alt="Go to section1"></a>
+				</div>
+				<div>
+					<a href="#section2" id="btnSection2"><img src="images/btnSection.png" class="btnSection" alt="Go to section2"></a>
+				</div>
+				<div>
+					<a href="#section3" id="btnSection3"><img src="images/btnSection.png" class="btnSection" alt="Go to section3"></a>
+				</div>
+			</div>
+		</div>
+		
 	</div>
 	
 	
@@ -60,29 +80,6 @@
 	
 	<div id="main">
 	</div>
-	
-	<script>
-		// Get the button
-		let mybutton = document.getElementById("btnScroll");
-		
-		// When the user scrolls down 20px from the top of the document, show the button
-		window.onscroll = function() {scrollFunction()};
-		
-		function scrollFunction() {
-		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-			mybutton.style.display = "block";
-		  } else {
-			mybutton.style.display = "none";
-		  }
-		}
-		
-		// When the user clicks on the button, scroll to the top of the document
-		function topFunction() {
-		  document.body.scrollTop = 0;
-		  document.documentElement.scrollTop = 0;
-		}
-		</script>
-		
-
+	<script src="./js/hugo.otth.js"></script>
 </body>
 </html>

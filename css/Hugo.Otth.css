@@ -13,9 +13,21 @@
     font-display: swap;
   }
 
-  html {
-    scroll-behavior: smooth;
-  }
+
+/* Default */
+:root {
+  --scrollpos: 0;
+}
+h1 {
+  font-family: Gothic, sans-serif;
+  color: #fff;
+  margin: 0px;
+}
+
+
+html {
+  scroll-behavior:smooth;
+}
 
 body {
   background:            linear-gradient(to left top, rgb(1, 1, 49), rgb(58, 0, 0));
@@ -26,6 +38,11 @@ body {
   width: 100%;
 }
 
+
+
+
+
+/* Id */
 #grad {
   background-image: linear-gradient(to bottom right, blue, purple);
 }
@@ -38,31 +55,26 @@ body {
 
 #btnScroll {
   display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
-  color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  opacity: 0.5;
 }
 
 #btnScroll:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  opacity: 1;
+}
+
+#btnSectiom {
+  position: fixed;
+
 }
 
 
-h1 {
-    font-family: Gothic, sans-serif;
-    color: #fff;
-    margin: 0px;
-}
 
+
+/* Classes */
 * {
     font-family: MetroPolis , sans-serif;
     color: rgb(163, 163, 163);
@@ -70,6 +82,38 @@ h1 {
 
 .section {
   margin-top: 20%;
+}
+
+.btnContainer {
+  position: fixed;
+  top: 40%;
+  left: 96%;
+}
+
+.btnScroll {
+  width: 200px; 
+  z-index: 10; 
+  position: fixed; 
+  left: 20px; 
+  bottom: 20px; 
+  height: 60px; 
+  width: 60px;
+}
+
+.btnSection {
+  height: 1.5%;
+  width: 1.5%;
+  scale: 100%;
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.btnSection:hover {
+  scale: 70%;
 }
 
 /* Hide Scrollbar */
@@ -80,3 +124,14 @@ h1 {
 .container::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
 }
+
+
+.saturate { filter: saturate(3); }
+.grayscale { filter: grayscale(50%); }
+.contrast { filter: contrast(160%); }
+.brightness { filter: brightness(0.25); }
+.blur { filter: blur(3px); }
+.invert { filter: invert(100%); }
+.sepia { filter: sepia(100%); }
+.huerotate { filter: hue-rotate(180deg); }
+.rss.opacity { filter: opacity(50%); }
