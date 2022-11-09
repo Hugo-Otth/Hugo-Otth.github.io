@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Metropolis';
+    src: url('../fonts/5f14883f91fad98f811abc7c_metropolis-semibold-webfont.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Gothic';
+    src: url('../fonts/5f14883fd13f498c2fb03e13_TitlingGothicFBExtended-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+body {
+  background:            linear-gradient(to left top, rgb(1, 1, 49), rgb(58, 0, 0));
+  background-attachment: fixed; /*edit*/
+  color: rgb(202, 202, 202);
+}
+
+#grad {
+  background-image: linear-gradient(to bottom right, blue, purple);
+}
+
+#name {
+  text-align: center;
+  margin-top: 25%;
+  font-weight: bold;
+}
+
+#sec2 {
+    margin-top: 20%;
+}
+
+h1 {
+    font-family: Gothic, sans-serif;
+    color: #fff;
+}
+
+* {
+    font-family: MetroPolis , sans-serif;
+    color: rgb(163, 163, 163);
+}
+
+
+/* Hide Scrollbar */
+.container {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
