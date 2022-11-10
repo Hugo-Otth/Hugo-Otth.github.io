@@ -18,7 +18,7 @@
 :root {
   --scrollpos: 0;
 }
-h1 {
+h1, h3 {
   font-family: Gothic, sans-serif;
   color: #fff;
   margin: 0px;
@@ -125,6 +125,15 @@ body {
     display: none;  /* Safari and Chrome */
 }
 
+.gallery img {
+  transition: 1s;
+  padding: 15px;
+  width: 300px;
+}
+.gallery img:hover {
+  filter: grayscale();
+  transform: scale(1.1);
+}
 
 .saturate { filter: saturate(3); }
 .grayscale { filter: grayscale(50%); }
