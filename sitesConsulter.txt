@@ -4,3 +4,5 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 
 https://stackoverflow.com/questions/45156676/css-issue-causing-white-space-at-top-of-page-on-safari-mobile-ios
 https://getbootstrap.com/docs/5.2/examples/product/#
+
+https://videojs.com/getting-started/
