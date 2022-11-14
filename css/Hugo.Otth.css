@@ -1,9 +1,11 @@
 :root {
   --border: rgb(3, 169, 244);
   
-  --g1: rgb(98, 0, 234);
-  --g2: rgb(236, 64, 122);
-  --g3: rgb(253, 216, 53);
+  --g1: rgb(0, 4, 234);
+  --g2: rgb(5, 171, 212);
+  --g3: rgb(228, 228, 228);
+
+  --scrollpos: 0;
 }
 
 @font-face {
@@ -23,9 +25,7 @@
 
 
 /* Default */
-:root {
-  --scrollpos: 0;
-}
+
 h1, h3 {
   font-family: Gothic, sans-serif;
   color: #fff;
@@ -39,12 +39,11 @@ html {
 
 body {
   background:            linear-gradient(to left top, rgb(1, 1, 49), rgb(58, 0, 0));
-  background-attachment: fixed; /*edit*/
+  background-attachment: var(--scrollpos);
   color: rgb(202, 202, 202);
   margin: 0px;
   padding: 0px;
   width: 100%;
-  display: grid;
   height: 100vh;
   place-items: center;
 }
@@ -164,8 +163,10 @@ a:link{
 
 
 
+
+
 .card {
-  aspect-ratio: 8 / 1;
+  aspect-ratio: 6 / 1;
   border: 0.5vmin solid var(--border);
   cursor: pointer;
   position: relative;
@@ -219,11 +220,12 @@ a:link{
   background-position: 0% 0%;
   background-size: 5vmin 5vmin;
   height: calc(100% - 10vmin);
-  padding: 5vmin;
+  padding: 1;
   position: relative;
   transition: background-position 350ms ease;
   width: calc(100% - 10vmin);
   z-index: 2;
+  text-align: center;
 }
 
 .card-title,
