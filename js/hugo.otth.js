@@ -8,6 +8,22 @@ let btnSection3 = document.getElementById("btnSection3")
 
 var scroll = window.pageYOffset;
 
+/*
+// Get the body element
+const body = document.querySelector('body');
+
+// Update background gradient colors based on scroll position
+window.addEventListener('scroll', () => {
+  // Calculate the scroll percentage
+  const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+
+  // Calculate the new colors for the gradient
+  const color1 = `rgba(0, 4, 20, ${scrollPercentage / 100})`;
+  const color2 = `rgba(3, 0, 244, ${scrollPercentage / 100})`;
+
+  // Update the background gradient colors
+  body.style.backgroundImage = `linear-gradient(to left top, ${color1}, ${color2})`;
+});*/
 
 
 

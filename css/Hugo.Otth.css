@@ -37,16 +37,23 @@ html {
   scroll-behavior:smooth;
 }
 
+
+
 body {
-  background:            linear-gradient(to left top, rgb(1, 1, 49), rgb(58, 0, 0));
-  background-attachment: var(--scrollpos);
+  background: linear-gradient(to left top, rgb(0, 0, 0), rgb(15, 0, 97));
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   color: rgb(202, 202, 202);
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 100vh;
   place-items: center;
 }
+
+
 
 a:link{
   text-decoration: none!important;
